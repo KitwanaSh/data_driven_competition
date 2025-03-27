@@ -37,10 +37,12 @@ This project aims to predict building damage levels after earthquakes using mach
 project-root/
 │
 ├── data/
+
 │ ├── test_values.csv
 │ └── train_labels.csv
 │ └── train_values.csv
 │
+
 ├── earth_quake_damage_nepal.ipynb
 
 
@@ -146,8 +148,8 @@ Severe errors (true=3 → pred=1): `235`
 </div>
 
 ## 📝 Lessons Learned
-✅ Ordinality Matters: Converting labels to [0,1,2] for LightGBM was critical.
-✅ Geo Features Dominate: Geographic region (geo_level_3_id) was the top predictor.
-✅ Fine-Tuning: Using `tuna` to fintune the LightGBM model can significally improve model performance.
+- ✅ Ordinality Matters: Converting labels to [0,1,2] for LightGBM was critical.
+- ✅ Geo Features Dominate: Geographic region (geo_level_3_id) was the top predictor.
+- ✅ Fine-Tuning: Using `tuna` to fintune the LightGBM model can significally improve model performance.
 
 _Last updated: 3/27/2025_
